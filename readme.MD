@@ -1,10 +1,11 @@
-
+```
 terraform init
 terraform plan
 terraform apply -auto-approve
 terraform destroy -auto-approve
+```
 
-_resource_types_
+**resource_types**
 ```
 1. aws_instance
 2. aws_security_group
