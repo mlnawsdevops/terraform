@@ -20,7 +20,7 @@ terraform destroy -auto-approve
             terraform.tfvars \
             environment variables \
             default variables \
-            prompt variables \
+            prompt variables 
 2. data types
 3. loops
 4. conditions
