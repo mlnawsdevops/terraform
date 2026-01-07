@@ -14,14 +14,14 @@ terraform destroy -auto-approve
 
 **Terraform topics**
 
-1. variables \
+1. variables 
 ``` 
     Preferences
-        command line variables 
-        terraform.tfvars 
-        environment variables 
-        default variables 
-        prompt variables 
+        1. command line variables 
+        2. terraform.tfvars 
+        3. environment variables 
+        4. default variables 
+        5. prompt variables 
 ```
 2. data types
 3. loops
