@@ -26,4 +26,4 @@ terraform destroy -auto-approve
 3. loops
 4. conditions
 5. functions
-6. output
+6. terraform outputs
