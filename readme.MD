@@ -12,9 +12,9 @@ terraform destroy -auto-approve
 2. aws_security_group
 ```
 
-**terarform topics**
+**Terraform topics**
 
-1. variables
+1. variables \
     **Preferences**
     ```
     command line variables
