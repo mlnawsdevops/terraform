@@ -15,7 +15,7 @@ terraform destroy -auto-approve
 **Terraform topics**
 
 1. variables \
-        **Preferences**
+        **Preferences** \
             command line variables \
             terraform.tfvars \
             environment variables \
