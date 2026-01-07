@@ -11,3 +11,19 @@ terraform destroy -auto-approve
 1. aws_instance
 2. aws_security_group
 ```
+
+**terarform topics**
+
+1. variables
+    **Preferences**
+    command line variables
+    terraform.tfvars
+    environment variables
+    default variables
+    prompt variables
+
+2. data types
+3. loops
+4. conditions
+5. functions
+6. output
