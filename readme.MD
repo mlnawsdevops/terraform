@@ -10,6 +10,7 @@ terraform destroy -auto-approve
 ```
 1. aws_instance
 2. aws_security_group
+3. aws_route53_records
 ```
 
 **Terraform topics**
@@ -24,7 +25,15 @@ terraform destroy -auto-approve
         5. prompt variables 
 ```
 2. data types
-3. loops
-4. conditions
-5. functions
-6. terraform outputs
+3. conditions
+4. functions
+5. terraform outputs
+6. loops
+    ```
+    1. count based loop
+    2. for or for each
+    ```
+7. terraform datasources
+8. terraform merge function
+
+
