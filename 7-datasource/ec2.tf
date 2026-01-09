@@ -28,15 +28,15 @@ resource "aws_security_group" "allow-ssh" {
 }
 
 resource "aws_instance" "terraform" {
-    count = length(var.instance_names)
-    ami = data.aws_ami.rhel9.id
-    instance_type = "t3.micro"
+    count = length(var.instance_names) #loops=3
+    ami = data.aws_ami.rhel9.id #datasource
+    instance_type = var.environment == "dev" ? "t3.micro" : "t3.small" #condition
     vpc_security_group_ids = [ aws_security_group.allow-ssh.id ]
 
-    tags = merge(
+    tags = merge( #merge function
         var.common_tags,
         {
-            Name = var.instance_names[count.index]
+            Name = var.instance_names[count.index] #mysql, backend, frontend
         }
     )
   
