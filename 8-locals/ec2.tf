@@ -30,7 +30,7 @@ resource "aws_security_group" "terraform" {
 resource "aws_instance" "terraform" {
     count = length(var.instance_names)
     ami = data.aws_ami.rhel.id
-    instance_type = local.instance_type
+    instance_type = (var.instance_names[count.index] == "mysql" && var.environment == "prod") ? "t3.small" : "t3.micro"
     vpc_security_group_ids = [ aws_security_group.terraform.id ]
 
     tags = merge(

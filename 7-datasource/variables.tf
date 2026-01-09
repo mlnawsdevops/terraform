@@ -43,7 +43,8 @@ variable "common_tags" {
     default = {
         Project = "expense"
         Environment = "dev"
-        Component = "backend"       
+        Component = "backend"
+        terraform = ""       
     }
   
 }

@@ -35,5 +35,5 @@ terraform destroy -auto-approve
     ```
 7. terraform datasources
 8. terraform merge function
-
-
+9. terraform locals
+10. state, remote state and locking
