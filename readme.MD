@@ -37,3 +37,4 @@ terraform destroy -auto-approve
 8. terraform merge function
 9. terraform locals
 10. state, remote state and locking
+11. s3 buckets and dynamodb
