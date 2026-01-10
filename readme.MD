@@ -38,3 +38,41 @@ terraform destroy -auto-approve
 9. terraform locals
 10. state, remote state and locking
 11. s3 buckets and dynamodb
+12. terraform dymanic loops/blocks
+13. provisioners
+    ```
+    1. local-exec
+    2. remote-exec
+    ```
+14. when condition in terraform
+15. Consistent infra across all env's
+    ```
+    1. tfvars
+    2. terraform workspaces
+    3. separate repos
+    ```
+16. tfvars
+    ```
+    1. terraform init --help
+    2. terraform init -backend-config=dev/backend.tf
+    3. terraform init -reconfigure -backend-config=prod/backend.tf
+    4. terraform plan -var-file=dev/dev.tfvars
+    5. terraform apply -var-file=dev/dev.tfvars -auto-approve
+    ```
+17. wokspace
+    ```
+    terraform.workspace == dev
+    terraform workspace
+    terraform workspace list
+    terraform workspace new dev
+    terraform workspace select dev
+    terraform init
+    terraform plan 
+    terraform apply -auto-approve
+    terraform workspace delete dev
+    ```
+18. Terraform modules
+    ```
+    1. root module(provider.tf, where we ran terraform commands in this path)
+    2. child module(where the resource code is present...like resources etc.,)
+    ```
