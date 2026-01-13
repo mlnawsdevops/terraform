@@ -11,6 +11,7 @@ terraform destroy -auto-approve
 1. aws_instance
 2. aws_security_group
 3. aws_route53_records
+4. aws_vpc
 ```
 
 **Terraform topics**
@@ -58,6 +59,7 @@ terraform destroy -auto-approve
     3. terraform init -reconfigure -backend-config=prod/backend.tf
     4. terraform plan -var-file=dev/dev.tfvars
     5. terraform apply -var-file=dev/dev.tfvars -auto-approve
+    6. terraform init -reconfigure -upgrade(when using git repo in user module and module developer latest code pushed to git repo) 
     ```
 17. wokspace
     ```
@@ -76,3 +78,5 @@ terraform destroy -auto-approve
     1. root module(provider.tf, where we ran terraform commands in this path)
     2. child module(where the resource code is present...like resources etc.,)
     ```
+19. drift detection
+20. 
